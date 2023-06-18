@@ -1,0 +1,219 @@
+  html{
+  scroll-behavior: smooth;
+}  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 960px; 
+  margin: 0 auto;
+  padding: 2.5%;
+}
+
+h1, h2 {
+  margin-bottom: 1.5%;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: 1px;
+}
+
+nav li {
+  margin-left: 30px;
+}
+
+nav ul li:first-child {
+  margin-left: auto;
+}
+
+nav ul li a {
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.6s ease;
+  font-size: 150%;
+}
+
+nav ul li a:hover {
+  background-color: #408dffa6;
+}
+
+nav h1 {
+  color: #fff;
+  /* margin-right: 60%; */
+  margin-left: -45%;
+  margin-top: 1%;
+  font-size: 250%;
+}
+
+/* Accueil */
+.hero-image {
+  background-image: url("../assets/img/pieces_1.1_sombre.jpg"); 
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+#services {
+  background-color: #fff;
+  padding: 40px;
+}
+
+#a-propos {
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+#contact {
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+/* Contact */
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"]:not(:hover),
+#contact input[type="email"]:not(:hover),
+#contact input[type="tel"]:not(:hover),
+#contact input[type="password"]:not(:hover),
+#contact input[type="cpassword"]:not(:hover),
+#contact textarea:not(:hover) {
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="password"]:hover,
+#contact input[type="cpassword"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid rgba(66, 142, 255, 0.651);
+  border-radius:  5px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+ #contact textarea {
+  height: 200px;
+  max-width: 100%;
+
+} 
+
+form button:not(:hover) {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 500ms;
+} 
+
+form button:hover {
+  background-color: rgba(66, 142, 255, 0.651);
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor:pointer;
+  transition: 500ms;
+} 
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 3%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+footer .copyright {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 14px;
+}
+
+.contact-infos {
+  margin-left: 15%;
+}
+
+.horaires-infos {
+  margin-right: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
